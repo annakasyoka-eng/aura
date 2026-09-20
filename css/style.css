@@ -1,0 +1,259 @@
+/* =========================
+   AURA — GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f4ef;
+    color: #1c1c1c;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    width: 100%;
+    padding: 25px 6%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-size: 14px;
+}
+
+.nav-button {
+    padding: 12px 20px;
+    border: 1px solid #1c1c1c;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 6%;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: clamp(60px, 9vw, 120px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+    margin-bottom: 35px;
+}
+
+h1 span {
+    display: block;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.hero-description {
+    max-width: 600px;
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.primary-button {
+    background: #1c1c1c;
+    color: white;
+    padding: 16px 26px;
+    border-radius: 30px;
+}
+
+.secondary-button {
+    padding: 16px 26px;
+    border: 1px solid #1c1c1c;
+    border-radius: 30px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding: 60px 7%;
+    }
+
+    h1 {
+        font-size: 60px;
+        letter-spacing: -3px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+/* =========================
+   PROBLEM / SOLUTION SECTION
+========================= */
+
+.problem-section {
+    padding: 140px 6%;
+    background: #1c1c1c;
+    color: #f7f4ef;
+}
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 70px;
+}
+
+.problem-content {
+    max-width: 950px;
+}
+
+.problem-content h2 {
+    font-size: clamp(45px, 6vw, 85px);
+    line-height: 1;
+    letter-spacing: -3px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.problem-content h2 span {
+    display: block;
+    font-style: italic;
+}
+
+.problem-content p {
+    max-width: 650px;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   GROWTH GRID
+========================= */
+
+.growth-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 120px;
+}
+
+.growth-item {
+    border-top: 1px solid rgba(247, 244, 239, 0.3);
+    padding-top: 25px;
+}
+
+.growth-item span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+
+.growth-item h3 {
+    font-size: 24px;
+    margin: 35px 0 15px;
+}
+
+.growth-item p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.7;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .problem-section {
+        padding: 90px 7%;
+    }
+
+    .problem-content h2 {
+        font-size: 48px;
+    }
+
+    .growth-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-top: 80px;
+    }
+
+}
+
+
+
+
