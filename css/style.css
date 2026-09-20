@@ -253,7 +253,138 @@ h1 span {
     }
 
 }
+/* =========================
+   SERVICES SECTION
+========================= */
 
+.services-section {
+    padding: 140px 6%;
+    background: #f7f4ef;
+    color: #1c1c1c;
+}
+
+.services-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.services-heading h2 {
+    max-width: 850px;
+    font-size: clamp(45px, 6vw, 80px);
+    line-height: 1;
+    letter-spacing: -3px;
+    font-weight: 500;
+}
+
+.services-heading h2 span {
+    display: block;
+    font-style: italic;
+}
+
+.services-heading p {
+    max-width: 350px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SERVICE CARDS
+========================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    min-height: 500px;
+    padding: 35px;
+    border: 1px solid #d8d3cb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card.featured {
+    background: #1c1c1c;
+    color: #f7f4ef;
+    border-color: #1c1c1c;
+}
+
+.service-number {
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+
+.service-content h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.service-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 350px;
+    opacity: 0.75;
+    margin-bottom: 30px;
+}
+
+.service-content ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.service-content li {
+    font-size: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(28, 28, 28, 0.15);
+}
+
+.featured .service-content li {
+    border-color: rgba(247, 244, 239, 0.2);
+}
+
+.service-link {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   SERVICES MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .services-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: 420px;
+    }
+
+}
 
 
 
