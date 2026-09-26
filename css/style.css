@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
 /* =========================
    AURA — GLOBAL STYLES
 ========================= */
@@ -9,7 +10,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     background: #f7f4ef;
     color: #1c1c1c;
 }
@@ -18,7 +19,17 @@ a {
     text-decoration: none;
     color: inherit;
 }
+/* =========================
+   GLOBAL POLISH
+========================= */
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
 
 /* =========================
    NAVIGATION
@@ -27,6 +38,12 @@ a {
 header {
     width: 100%;
     padding: 25px 6%;
+     position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(247, 244, 239, .92);
+    backdrop-filter: blur(12px);
 }
 
 nav {
@@ -1258,4 +1275,21 @@ h1 span {
         gap: 10px;
     }
 
+}
+/* =========================
+   TYPOGRAPHY POLISH
+========================= */
+
+.hero h1 span,
+.problem-content h2 span,
+.services-heading h2 span,
+.industries-heading h2 span,
+.project-info h2 span,
+.process-heading h2 span,
+.offers-heading h2 span,
+.audit-content h2 span,
+.footer-statement span {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 500;
 }
