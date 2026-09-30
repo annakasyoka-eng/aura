@@ -1293,3 +1293,196 @@ h1 span {
     font-style: italic;
     font-weight: 500;
 }
+/* ================================
+   AZURE DIANI VISUAL
+================================ */
+
+.azure-scene {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            180deg,
+            #b9c9c8 0%,
+            #d9d1bd 42%,
+            #9eae9e 43%,
+            #6f8f91 63%,
+            #315d68 100%
+        );
+    transition: transform .7s ease;
+}
+
+.featured-project:hover .azure-scene {
+    transform: scale(1.04);
+}
+
+/* Sun */
+
+.azure-sun {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: #f3d9a4;
+    top: 16%;
+    right: 18%;
+    filter: blur(1px);
+    opacity: .9;
+}
+
+/* Horizon */
+
+.azure-horizon {
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    left: 0;
+    top: 39%;
+    background: rgba(236, 218, 182, .35);
+}
+
+/* Water */
+
+.azure-water {
+    position: absolute;
+    width: 130%;
+    height: 45%;
+    left: -15%;
+    bottom: -12%;
+    border-radius: 50% 50% 0 0;
+    background:
+        repeating-linear-gradient(
+            175deg,
+            rgba(255,255,255,.12) 0px,
+            rgba(255,255,255,.12) 2px,
+            transparent 2px,
+            transparent 14px
+        ),
+        linear-gradient(
+            180deg,
+            #67949a,
+            #315d68
+        );
+}
+
+/* Palm silhouettes */
+
+.azure-palm {
+    position: absolute;
+    width: 18px;
+    height: 300px;
+    background: #263c37;
+    bottom: -50px;
+    border-radius: 50px;
+    transform-origin: bottom center;
+    z-index: 2;
+}
+
+.azure-palm-left {
+    left: 9%;
+    transform: rotate(8deg);
+}
+
+.azure-palm-right {
+    right: 8%;
+    height: 340px;
+    transform: rotate(-10deg);
+}
+
+/* Palm leaves */
+
+.azure-palm::before,
+.azure-palm::after {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 90px;
+    top: -35px;
+    left: -75px;
+    border-radius: 50%;
+    border-top: 18px solid #263c37;
+    transform: rotate(-20deg);
+}
+
+.azure-palm::after {
+    transform: rotate(25deg);
+}
+
+/* Azure branding */
+
+.azure-brand {
+    position: absolute;
+    z-index: 3;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f7f4ef;
+    text-shadow: 0 3px 20px rgba(0,0,0,.18);
+}
+
+.azure-brand span {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(70px, 9vw, 135px);
+    line-height: .8;
+    letter-spacing: -6px;
+    font-weight: 500;
+}
+
+.azure-brand small {
+    margin-top: 22px;
+    font-size: 12px;
+    letter-spacing: 9px;
+    margin-left: 9px;
+}
+
+/* Bottom caption */
+
+.azure-caption {
+    position: absolute;
+    z-index: 4;
+    left: 30px;
+    right: 30px;
+    bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    color: #f7f4ef;
+    font-size: 10px;
+    letter-spacing: 2px;
+    opacity: .7;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .azure-sun {
+        width: 120px;
+        height: 120px;
+        right: 12%;
+    }
+
+    .azure-brand span {
+        font-size: 85px;
+    }
+
+    .azure-brand small {
+        font-size: 10px;
+        letter-spacing: 7px;
+    }
+
+    .azure-palm {
+        height: 240px;
+    }
+
+    .azure-palm-right {
+        height: 270px;
+    }
+
+    .azure-caption {
+        left: 20px;
+        right: 20px;
+    }
+}
