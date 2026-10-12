@@ -1664,3 +1664,198 @@ h1 span {
         margin-top: 55px;
     }
 }
+/* =================================
+   BUILD 14 — AURA TRUST SECTION
+================================= */
+
+.trust-section {
+    padding: 150px 6%;
+    background: #1c1c1c;
+    color: #f7f4ef;
+}
+
+.trust-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 70px;
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+
+.trust-heading h2 {
+    max-width: 800px;
+    font-size: clamp(45px, 6vw, 82px);
+    line-height: 1;
+    letter-spacing: -4px;
+    font-weight: 500;
+}
+
+.trust-heading h2 span {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.trust-heading > p {
+    max-width: 350px;
+    font-size: 16px;
+    line-height: 1.8;
+    opacity: .65;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trust-card {
+    min-height: 380px;
+    padding: 35px;
+    border: 1px solid rgba(247, 244, 239, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        border-color .3s ease;
+}
+
+.trust-card:hover {
+    transform: translateY(-6px);
+    background: rgba(247, 244, 239, .04);
+    border-color: rgba(247, 244, 239, .5);
+}
+
+.trust-number {
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: .5;
+}
+
+.trust-card h3 {
+    margin-top: 65px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+.trust-card > p {
+    max-width: 320px;
+    font-size: 15px;
+    line-height: 1.8;
+    opacity: .65;
+}
+
+.trust-caption {
+    margin-top: auto;
+    padding-top: 35px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    opacity: .45;
+}
+
+.trust-bottom {
+    margin-top: 100px;
+    padding-top: 50px;
+    border-top: 1px solid rgba(247, 244, 239, .2);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.trust-bottom p {
+    max-width: 750px;
+    font-size: clamp(28px, 4vw, 48px);
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+.trust-bottom p span {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+
+.trust-bottom a {
+    flex-shrink: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(247, 244, 239, .5);
+    font-size: 13px;
+    transition: opacity .3s ease;
+}
+
+.trust-bottom a:hover {
+    opacity: .6;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .trust-section {
+        padding: 100px 7%;
+    }
+
+    .trust-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+    .trust-heading h2 {
+        font-size: 55px;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .trust-card {
+        min-height: 300px;
+    }
+
+    .trust-card h3 {
+        margin-top: 45px;
+    }
+
+    .trust-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .trust-section {
+        padding: 85px 7%;
+    }
+
+    .trust-heading h2 {
+        font-size: 43px;
+        letter-spacing: -2px;
+    }
+
+    .trust-card {
+        padding: 28px;
+    }
+
+    .trust-card h3 {
+        font-size: 27px;
+    }
+
+    .trust-bottom p {
+        font-size: 32px;
+    }
+}
